@@ -1,3 +1,4 @@
-data/
-reports/
+data/*
+!data/team_name_map.csv
+!data/excluded_previews.csv
 __pycache__/

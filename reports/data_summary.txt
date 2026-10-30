@@ -1,0 +1,27 @@
+[3.1] Previews in downloaded CSV: 1,506
+[3.1] Seasons in downloaded CSV: 2013-14, 2014-15, 2015-16, 2016-17, 2017-18
+[3.1] Previews per season (raw): {'2013-14': 116, '2014-15': 359, '2015-16': 363, '2016-17': 345, '2017-18': 323}
+[3.1] Words per preview, raw (median / min / max / mean): 80 / 38 / 204 / 81.1
+[3.1, 4.6] Words per preview, matched set (median / min / max / mean): 80 / 52 / 204 / 80.9
+[3.1] Matched previews ending in a two-word name (journalist sign-off): 84.5%
+[3.2] EPL matches in results data: 1,900
+[3.2] Results seasons: 2013-14, 2014-15, 2015-16, 2016-17, 2017-18
+[3.2, 4.1] Outcome shares in matched set (H / A / D): 46.0% / 30.2% / 23.8%
+[3.3 step 1] Guardian spellings mapped -> standard club names: 48 -> 28
+[3.3 step 2] Days from publication to match: {1.0: 1042, 2.0: 316, 3.0: 48, 4.0: 2, 5.0: 1}
+[3.3 step 2] Share played the day after publication: 74.0%
+[3.3 step 2] Maximum lag (days): 5
+[3.3 step 2] Fixtures matched by more than one preview: 0
+[3.3 step 3] Matched matches lacking full 3-match baseline: 116
+[3.3 table] Downloaded previews: 1,506
+[3.3 table] After removing non-EPL (52): 1,454
+[3.3 table] After removing no league fixture within 7 days (44, incl. 1 malformed date): 1,410
+[3.3 table] After removing missing text (1): 1,409
+[3.3 table] Rows in analysis file (check): 1,409
+[3.3 table] Matches with full 3-match baseline: 1,293
+[4.4] Train matches (2013-14 to 2016-17, with baseline): 1,014
+[4.4] Test matches (2017-18, with baseline): 279
+[4.4] Test matches (2017-18, all matched): 309
+[4.1] Always-predict-home accuracy, test set: 47.3%
+[4.1] Always-predict-home accuracy, all matched: 46.0%
+[4.3] Match date range: 2014-02-22 to 2018-05-13
