@@ -154,8 +154,8 @@ res.to_csv(out_dir / "epl_results_2013_2018.csv", index=False)
 reason = pd.Series(pd.NA, index=merged.index, dtype="object")
 reason[no_text & merged.FixtureID.notna()] = "missing text"
 reason[unmatched_epl & bad_date.reindex(merged.index, fill_value=False)] = "unparseable publication date"
-reason[unmatched_epl & reason.isna()] = "no league fixture 0-7 days after publication (e.g. cup tie)"
-reason[non_epl] = "non-EPL team (cup or European match)"
+reason[unmatched_epl & reason.isna()] = "no league fixture between the same teams 0-7 days after publication"
+reason[non_epl] = "team not in the EPL during 2013-18"
 excl = merged.loc[reason.notna(), ["MatchID", "Home", "Away", "Date", "Season"]].assign(Reason=reason[reason.notna()])
 excl.to_csv(out_dir / "excluded_previews.csv", index=False)
 

@@ -60,8 +60,8 @@ say("3.3 step 3", "Matched matches lacking full 3-match baseline", int((~base).s
 
 # Exclusion funnel (table in 3.3)
 counts = excl["Reason"].value_counts().to_dict()
-non_epl = counts.get("non-EPL team (cup or European match)", 0)
-no_fix = (counts.get("no league fixture 0-7 days after publication (e.g. cup tie)", 0)
+non_epl = counts.get("team not in the EPL during 2013-18", 0)
+no_fix = (counts.get("no league fixture between the same teams 0-7 days after publication", 0)
           + counts.get("unparseable publication date", 0))
 no_text = counts.get("missing text", 0)
 say("3.3 table", "Downloaded previews", f"{len(raw):,}")
